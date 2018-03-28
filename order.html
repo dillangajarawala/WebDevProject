@@ -1,0 +1,227 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Prantl's Bakery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  <!--External CSS files-->
+  <!--Bootstrap CSS files-->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://wenzhixin.net.cn/p/bootstrap-table/src/bootstrap-table.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdn.kendostatic.com/2014.1.318/styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="http://cdn.kendostatic.com/2014.1.318/styles/kendo.bootstrap.min.css" rel="stylesheet" />
+    <link href="http://protostrap.com/Assets/gv/css/gv.bootstrap-form.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css"/>
+    <!--External JS files-->
+    <!--Bootstrap JS files-->
+    <script src="http://cdn.kendostatic.com/2014.1.318/js/jquery.min.js"></script>
+    <script src="http://protostrap.com/Assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="http://wenzhixin.net.cn/p/bootstrap-table/src/bootstrap-table.js" type="text/javascript"></script>
+    <script src="http://protostrap.com/Assets/inputmask/js/jquery.inputmask.js" type="text/javascript"></script>
+    <script src="http://cdn.kendostatic.com/2014.1.318/js/kendo.all.min.js"></script>
+    <script src="http://protostrap.com/Assets/parsley/parsley.extend.js" type="text/javascript"></script>
+    <script src="http://protostrap.com/Assets/parsley/2.0/parsley.js" type="text/javascript"></script>
+    <script src="http://protostrap.com/Assets/download.js" type="text/javascript"></script>
+    <script src="http://protostrap.com/Assets/protostrap.js" type="text/javascript"></script>
+
+
+    <script src="js/scripts.js" type="text/javascript"></script>
+
+    </head>
+
+    <body>
+    <header>
+<!--Navigation Section-->
+      <nav>
+        <ul id="ordernavbar">
+          <a href="index.html" id="main"><img src="images/logo.png"  height="100" width="186"/></a>
+          <a href="about.html" class="otherlink">About</a>
+          <a href="contact.html" class="otherlink">Contact Us</a>
+          <a href="order.html" class="otherlink" id="selected">Order</a>
+          <a href="weddings.html" class="otherlink">Weddings</a>
+          <a href="celebrations.html" class="otherlink">Celebrations</a>
+          <a href="holidays.html" class="otherlink">Holidays</a>
+      </nav>
+      <hr />
+    </header>
+    <!--Content-->
+<div id="ordercontent">
+    <div class="container-fluid">
+        <div class="row">
+
+            <form onsubmit="return validate()" id="formentry" class="form-horizontal" role="form">
+                <div class="container-fluid shadow">
+                    <div class="row">
+
+
+                                    <div class="row">
+                                        <div class="col-md-12"><div class="form-group brdbot">
+			    <h1 id="orderatorte">Order a Burnt Almond Torte</h1>
+			    <div class="controls">
+
+                <p id="field3" data-default-label="Header" data-default-is-header="true" data-control-type="header"></p><span id="errId1" class="error"></span></div>
+
+		</div><div class="form-group brdbot">
+			    <h4>Customer Information</h4>
+			    <div class="controls">
+
+                <p id="field4" data-default-label="Header" data-default-is-header="true" data-control-type="header"></p><span id="errId2" class="error"></span></div>
+
+		</div><div class="form-group">
+			    <label class="control-label" for="fname">First Name<span class="req"> *</span></label>
+			    <div class="controls">
+
+                <input id="fname" type="text" class="form-control k-textbox" data-role="text" required="required" data-parsley-errors-container="#errId3"><span id="errId3" class="error"></span></div>
+
+		</div><div class="form-group">
+			    <label class="control-label" for="lname">Last Name<span class="req"> *</span></label>
+			    <div class="controls">
+
+                <input id="lname" type="text" class="form-control k-textbox" data-role="text" placeholder="" required="required" data-parsley-errors-container="#errId4"><span id="errId4" class="error"></span></div>
+
+		</div><div class="form-group">
+			    <label class="control-label" for="address1">Address Line 1<span class="req"> *</span></label>
+			    <div class="controls">
+
+                <input id="address1" type="text" class="form-control k-textbox" data-role="text" required="required" data-parsley-errors-container="#errId5"><span id="errId5" class="error"></span></div>
+
+		</div><div class="form-group">
+			    <label class="control-label" for="field16">Address Line 2</label>
+			    <div class="controls">
+
+                <input id="field16" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId6"><span id="errId6" class="error"></span></div>
+
+		</div><div class="form-group">
+			    <label class="control-label" for="city">City<span class="req"> *</span></label>
+			    <div class="controls">
+
+                <input id="city" type="text" class="form-control k-textbox" data-role="text" required="required" data-parsley-errors-container="#errId7"><span id="errId7" class="error"></span></div>
+
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label" for="field20">Zip Code<span class="req"> *</span></label>
+			    <div class="controls">
+
+                <input id="zipcode" type="text" class="form-control k-textbox" data-role="text" required="required" data-parsley-errors-container="#errId8"><span id="errId8" class="error"></span></div>
+
+		</div><div class="form-group">
+			    <label class="control-label" for="state">State<span class="req"> *</span></label>
+			    <div class="controls">
+
+                <select id="state" class="form-control" data-role="select" selected="selected" required="required" data-parsley-errors-container="#errId9">
+
+
+
+
+
+		<option value="Alabama" selected="selected">Alabama</option><option value="Alaska">Alaska</option><option value="Arizona">Arizona</option><option value="Arkansas">Arkansas</option><option value="California">California</option><option value="Colorado">Colorado</option><option value="Connecticut">Connecticut</option><option value="Delaware">Delaware</option><option value="Florida">Florida</option><option value="Georgia">Georgia</option><option value="Hawaii">Hawaii</option><option value="Idaho">Idaho</option><option value="Illinois">Illinois</option><option value="Indiana">Indiana</option><option value="Iowa">Iowa</option><option value="Kansas">Kansas</option><option value="Kentucky">Kentucky</option><option value="Louisiana">Louisiana</option><option value="Maine">Maine</option><option value="Maryland">Maryland</option><option value="Massachusetts">Massachusetts</option><option value="Michigan">Michigan</option><option value="Minnesota">Minnesota</option><option value="Mississippi">Mississippi</option><option value="Missouri">Missouri</option><option value="Montana">Montana</option><option value="Nebraska">Nebraska</option><option value="Nevada">Nevada</option><option value="New Hampshire">New Hampshire</option><option value="New Jersey">New Jersey</option><option value="New Mexico">New Mexico</option><option value="New York">New York</option><option value="North Carolina">North Carolina</option><option value="North Dakota">North Dakota</option><option value="Ohio">Ohio</option><option value="Oklahoma">Oklahoma</option><option value="Oregon">Oregon</option><option value="Pennsylvania">Pennsylvania</option><option value="Rhode Island">Rhode Island</option><option value="South Carolina">South Carolina</option><option value="South Dakota">South Dakota</option><option value="Tennessee">Tennessee</option><option value="Texas">Texas</option><option value="Utah">Utah</option><option value="Vermont">Vermont</option><option value="Virginia">Virginia</option></select><span id="errId9" class="error"></span></div>
+
+		</div><div class="form-group">
+			    <label class="control-label" for="country">Country<span class="req"> *</span></label>
+			    <div class="controls">
+
+                <select id="country" class="form-control" data-role="select" required="required" selected="selected" data-parsley-errors-container="#errId10">
+
+
+
+
+
+		<option value="">USA</option></select><span id="errId10" class="error"></span></div>
+
+		</div><div class="form-group">
+			    <label class="control-label" for="email">Email Address<span class="req"> *</span></label>
+			    <div class="controls">
+
+                <input id="email" type="email" class="form-control k-textbox" data-role="text" placeholder="abc@dfg.com" required="required" data-parsley-errors-container="#errId11"><span id="errId11" class="error"></span></div>
+
+		</div><div class="form-group">
+			    <label class="control-label" for="phone">Phone Number (no dashes)<span class="req"> *</span></label>
+			    <div class="controls">
+
+                <input id="phone" type="text" class="form-control k-textbox" required="required" data-parsley-errors-container="#errId12"><span id="errId12" class="error"></span></div>
+
+		</div><div class="form-group brdbot">
+			    <h4>Order Information</h4>
+			    <div class="controls">
+
+                <p id="field170" data-default-label="Header" data-default-is-header="true" data-control-type="header"></p><span id="errId13" class="error"></span></div>
+
+		</div><div class="form-group">
+			    <label class="control-label" for="numcakes">Number of Cakes<span class="req"> *</span></label>
+			    <div class="controls">
+
+                <select id="numcakes" class="form-control" data-role="select" required="required" selected="selected" data-parsley-errors-container="#errId14">
+
+
+
+
+
+		<option value="1" selected="selected">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="">6</option><option value="">7</option><option value="">8</option><option value="">9</option><option value="">10</option></select><span id="errId14" class="error"></span></div>
+
+		</div><div class="form-group">
+			    <label class="control-label" for="pickup">Pickup Location</label>
+			    <div class="controls">
+
+                <select id="pickup" class="form-control" data-role="select" selected="selected" data-parsley-errors-container="#errId15">
+
+
+
+
+
+		<option value="">Shadyside</option><option value="Option 4">Downtown</option></select><span id="errId15" class="error"></span></div>
+
+		</div><div class="form-group">
+			    <label class="control-label" for="date">Pickup Date<span class="req"> *</span></label>
+			    <div class="controls">
+
+                <span class="k-widget k-datepicker k-header form-control"><span class="k-picker-wrap k-state-default"><input id="date" type="text" class="form-control k-input" data-role="date" role="textbox" aria-haspopup="true" aria-expanded="false" aria-owns="field244_dateview" style="width: 100%;" aria-disabled="false" aria-readonly="false" aria-label="Current focused date is null" data-error-container="#errfield244" required="required" data-parsley-errors-container="#errId16"><span unselectable="on" class="k-select" role="button" aria-controls="field244_dateview"><span unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span><span id="errId16" class="error"></span></div>
+
+		</div><div class="form-group">
+			    <label class="control-label" for="field245">Pickup Time<span class="req"> *</span></label>
+			    <div class="controls">
+
+                <span class="k-widget k-timepicker k-header form-control"><span class="k-picker-wrap k-state-default"><input id="field245" type="text" class="form-control k-input" data-role="time" role="textbox" aria-haspopup="true" aria-expanded="false" aria-owns="field245_timeview" style="width: 100%;" aria-disabled="false" aria-readonly="false" data-error-container="#errfield245" required="required" data-parsley-errors-container="#errId17"><span unselectable="on" class="k-select" role="button" aria-controls="field245_timeview"><span unselectable="on" class="k-icon k-i-clock">select</span></span></span></span><span id="errId17" class="error"></span></div>
+
+		</div><div class="form-group group-inline">
+
+
+
+		<button id="orderbutton" type="submit" class="btn btn-lg btn-default">Order</button></div></div>
+                                    </div>
+
+
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+  </div>
+  <!--Footer-->
+    <div id="footer">
+      <hr />
+      <div id="social">
+        <a href="https://www.facebook.com/PrantlsBakery"><img src="images/fb.png" height=50 width=50 /></a>
+        <a href="https://twitter.com/prantlsbakery"><img src="images/twitter.png" height=50 width=50 /></a>
+        <a href="https://www.instagram.com/prantls_bakery/"><img src="images/insta.png" height=50 width=50 /></a>
+      </div>
+      <br /><br />
+      <div id="linkbar">
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact Us</a> |
+        <a href="order.html">Order</a> |
+        <a href="weddings.html">Weddings</a> |
+        <a href="celebrations.html">Celebrations</a> |
+        <a href="holidays.html">Holidays</a> |
+        <br /><br />
+        <p id="copyright">
+          &copy; Prantl's Bakery 2018
+        </p>
+      </div>
+      </div>
+</body>
+</html>

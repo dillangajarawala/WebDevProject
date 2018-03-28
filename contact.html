@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Dillan Gajarawala">
+  <meta name="description" content="Prantl's Bakery Website">
+  <!--External CSS files-->
+  <!--Bootstrap CSS files-->
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="http://wenzhixin.net.cn/p/bootstrap-table/src/bootstrap-table.css" rel="stylesheet" type="text/css" />
+  <link href="http://cdn.kendostatic.com/2014.1.318/styles/kendo.common.min.css" rel="stylesheet" />
+  <link href="http://cdn.kendostatic.com/2014.1.318/styles/kendo.bootstrap.min.css" rel="stylesheet" />
+  <link href="http://protostrap.com/Assets/gv/css/gv.bootstrap-form.css" rel="stylesheet" type="text/css" />
+
+
+  <link rel="stylesheet" media="all" type="text/css" href="css/styles.css"/>
+
+  <!--External JS files-->
+  <!--Bootstrap JS files-->
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="http://cdn.kendostatic.com/2014.1.318/js/jquery.min.js"></script>
+  <script src="http://protostrap.com/Assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="http://wenzhixin.net.cn/p/bootstrap-table/src/bootstrap-table.js" type="text/javascript"></script>
+  <script src="http://protostrap.com/Assets/inputmask/js/jquery.inputmask.js" type="text/javascript"></script>
+  <script src="http://cdn.kendostatic.com/2014.1.318/js/kendo.all.min.js"></script>
+  <script src="http://protostrap.com/Assets/parsely/parsley.extend.js" type="text/javascript"></script>
+  <script src="http://protostrap.com/Assets/parsely/2.0/parsley.js" type="text/javascript"></script>
+  <script src="http://protostrap.com/Assets/download.js" type="text/javascript"></script>
+  <script src="http://protostrap.com/Assets/protostrap.js" type="text/javascript"></script>
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+
+  <script src="js/scripts.js" type="text/javascript"></script>
+  <!--Highcharts-->
+  <script type="text/javascript">
+    $(function () {
+        $("#Shadyside-graph").highcharts({
+
+          title: {
+      text: 'Popular times for Shadyside'
+  },
+
+  subtitle: {
+      text: '(Average per day)'
+  },
+
+  xAxis: {
+    title: {
+      text: 'Time'
+    },
+    categories: ['7am', '8am', '9am', '10am', '11am', '12pm', '1pm',
+          '2pm', '3pm', '4pm', '5pm']
+  },
+
+  yAxis: {
+      title: {
+          text: 'Number of people'
+      }
+  },
+  tooltip: {
+      valueSuffix: ' people present (on average)'
+  },
+
+  legend: {
+      layout: 'vertical',
+      align: 'right',
+      verticalAlign: 'middle'
+  },
+
+  plotOptions: {
+      series: {
+        label: {
+          connectorAllowed: false
+        },
+      }
+  },
+  series: [{
+      name: 'Shadyside',
+      data: [10,8,24,5,7,32,16,18,27,39,32]
+  }],
+        });
+
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(function () {
+        $("#Downtown-graph").highcharts({
+
+          title: {
+      text: 'Popular times for Downtown'
+  },
+
+  subtitle: {
+      text: '(Average per day)'
+  },
+
+  xAxis: {
+    title: {
+      text: 'Time'
+    },
+    categories: ['7am', '8am', '9am', '10am', '11am', '12pm', '1pm',
+          '2pm', '3pm', '4pm', '5pm']
+  },
+
+  yAxis: {
+      title: {
+          text: 'Number of people'
+      }
+  },
+  tooltip: {
+      valueSuffix: ' people present (on average)'
+  },
+
+  legend: {
+      layout: 'vertical',
+      align: 'right',
+      verticalAlign: 'middle'
+  },
+
+  plotOptions: {
+      series: {
+        label: {
+          connectorAllowed: false
+        },
+      }
+  },
+  series: [{
+      name: 'Downtown',
+      data: [24,12,16,8,11,19,15,18,13,21,35]
+  }],
+        });
+
+    });
+  </script>
+  <title>Prantl's Bakery</title>
+</head>
+
+<body>
+  <header>
+<!--Navigation Section-->
+    <nav>
+      <ul id="contactnavbar">
+        <a href="index.html" id="main"><img src="images/logo.png"  height="100" width="186"/></a>
+        <a href="about.html" class="otherlink">About</a>
+        <a href="contact.html" class="otherlink" id="selected">Contact Us</a>
+        <a href="order.html" class="otherlink">Order</a>
+        <a href="weddings.html" class="otherlink">Weddings</a>
+        <a href="celebrations.html" class="otherlink">Celebrations</a>
+        <a href="holidays.html" class="otherlink">Holidays</a>
+      </ul>
+
+    </nav>
+    <hr />
+  </header>
+<!--Content-->
+  <div id="contactcontent">
+    <h2><strong>Contact Us</strong></h2>
+    <div id=locationimages>
+      <img id="shadysideimage" src="images/shadyside.jpg" />
+      <img id="downtownimage" src="images/downtown.jpg" />
+    </div>
+    <iframe id="Shadysidemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.069510753028!2d-79.9350569493182!3d40.451598461341334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f211aed70341%3A0x10db72884d553d04!2sPrantl&#39;s+Bakery!5e0!3m2!1sen!2sus!4v1521694446892" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe id="Downtownmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.5421725434144!2d-80.0042745493186!3d40.441135561977944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f15696baf219%3A0x9e8bccef10009784!2sPrantl&#39;s+Bakery!5e0!3m2!1sen!2sus!4v1521694522771" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div id="locationdescript">
+    <div id="Shadysidedescript"><p><strong>Shadyside</strong><br />5525 Walnut Street<br />Pittsburgh, PA, 15232<br />Phone number: 412-621-2092<br />
+Email: <a href="mailto:info@prantlsbakery.com">info@prantlsbakery.com</a><br /><br />Monday: 9am – 4pm<br />Tuesday – Saturday: 7:30am – 6pm<br />Sunday: 9am – 4pm</p></div>
+    <div id="Downtowndescript"><p><strong>Downtown</strong><br />438 Market Street<br />Pittsburgh, PA 15222<br />General Information: 412-471-6861<br />
+Email: <a href="mailto:infoms@prantlsbakery.com">infoms@prantlsbakery.com</a><br /><br />Monday – Friday: 7am – 6pm<br />Saturday: 9am – 4pm<br />Sunday: 10am – 3pm</p></div></div>
+    <div id="graphs">
+      <div id="Shadyside-graph"></div>
+      <div id="Downtown-graph"></div>
+            </div>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <form onsubmit="return validate1()" action="mailto:infoneeded@prantlsbakery.com" method="post" enctype="text/plain" id="formentry" class="form-horizontal" role="form" data-parsley-validate>
+                <div class="container-fluid shadow">
+                    <div class="row">
+                      <div class="row">
+                                        <div class="col-md-12"><div class="form-group brdbot">
+          <h1 id="formtitle">Contact Us</h1>
+          <div class="controls">
+
+                <p id="field1" data-default-label="Header" data-default-is-header="true" data-control-type="header"></p><span id="errId1" class="error"></span></div>
+
+    </div><div class="form-group">
+          <label class="control-label" for="fname">First Name<span class="req"> *</span></label>
+          <div class="controls">
+
+                <input id="firstname" name="firstname" type="text" class="form-control k-textbox" data-role="text" required="required" data-parsley-errors-container="#errId2"><span id="errId2" class="error"></span></div>
+
+    </div><div class="form-group">
+          <label class="control-label" for="lname">Last Name<span class="req"> *</span></label>
+          <div class="controls">
+
+                <input id="lastname" name="lastname" type="text" class="form-control k-textbox" data-role="text" required="required" data-parsley-errors-container="#errId3"><span id="errId3" class="error"></span></div>
+
+    </div><div class="form-group">
+          <label class="control-label" for="lname">Email Address<span class="req"> *</span></label>
+          <div class="controls">
+
+                <input id="email" type="email" name="email" class="form-control k-textbox" data-role="text" placeholder="abc@dfg.com" required="required" data-parsley-errors-container="#errId3"><span id="errId3" class="error"></span></div>
+
+    </div><div class="form-group">
+          <label class="control-label" for="zipcode">Zip Code</label>
+          <div class="controls">
+
+                <input id="zipcode" type="text" name="zipcode" maxlength="5" class="form-control k-textbox" data-parsley-errors-container="#errId4"><span id="errId4" class="error"></span></div>
+
+    </div><div class="form-group">
+          <label class="control-label" for="inquiry">What is your Inquiry?</label>
+          <div class="controls">
+
+                <textarea id="inquiry" rows="3" name="inquiry" class="form-control k-textbox" data-role="textarea" data-parsley-errors-container="#errId5"></textarea><span id="errId5" class="error"></span></div>
+
+    </div><div class="form-group">
+          <label class="control-label">Would you like to subscribe to our mailing list?</label>
+          <div class="controls">
+
+                <label class="checkbox" for="checkbox11"><input type="checkbox" value="Yes" id="checkbox11" name="field8" data-parsley-errors-container="#errId6">Yes</label><span id="errId6" class="error"></span></div><br />
+                <button id="orderbutton" type="submit" class="btn btn-lg btn-default">Submit</button>
+    </div></div>
+                                    </div>
+
+
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+  </div>
+<!--Footer-->
+  <div id="contactfooter">
+    <hr />
+    <div id="social">
+      <a href="https://www.facebook.com/PrantlsBakery"><img src="images/fb.png" height=50 width=50 /></a>
+      <a href="https://twitter.com/prantlsbakery"><img src="images/twitter.png" height=50 width=50 /></a>
+      <a href="https://www.instagram.com/prantls_bakery/"><img src="images/insta.png" height=50 width=50 /></a>
+    </div>
+    <br /><br />
+    <div id="linkbar">
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact Us</a> |
+      <a href="order.html">Order</a> |
+      <a href="weddings.html">Weddings</a> |
+      <a href="celebrations.html">Celebrations</a> |
+      <a href="holidays.html">Holidays</a> |
+      <br /><br />
+      <p id="copyright">
+        &copy; Prantl's Bakery 2018
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

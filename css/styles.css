@@ -1,0 +1,324 @@
+/* styles the entire page */
+html {
+  font-family: Garamond;
+}
+/* styles the body */
+body {
+  background-color: #EF963D;
+  font-family: Garamond;
+}
+/* centers the main headings of the pages */
+h2 {
+  text-align: center;
+}
+/* styles the navigation bar */
+#navbar {
+  font-family: Garamond;
+  font-size: 1.125em;
+}
+/* styles the individual navigation elements */
+.otherlink {
+  text-decoration: none;
+  color: black;
+  font-size: 1.125em;
+  padding: 10px;
+
+}
+/* styles the navbar of the order page */
+#ordernavbar {
+  font-size: 1.25em;
+  display: inline;
+}
+/* styles the navbar of the contact page */
+#contactnavbar {
+  font-size: 1.25em;
+}
+/* styles the selected page's link */
+#selected {
+  background-color:#00a665;
+}
+/* styles the content of the contact page */
+#contactcontent {
+  font-size: 1.125em;
+}
+/* styles the navbar of the frameborder page */
+#ordercontent {
+  font-size: 1.125em;
+}
+/* styles the main heading of the the order form */
+#orderatorte {
+  text-align: center;
+}
+/* styles the nav links if they are hovered over */
+.otherlink:hover {
+  background-color: #00a665;
+  text-decoration: none;
+  color: black;
+}
+/* omits the dropdown bar when the window is not sized correctly */
+.dropdown {
+  display:none;
+}
+/* styles the footer of all pages */
+#footer {
+  clear:both;
+}
+/* styles the link bar of all pages */
+#linkbar {
+  text-align-last: center;
+}
+/* styles the social links of all pages */
+#social {
+  text-align: center;
+}
+/* styles the torte video */
+#torte {
+   float: right;
+   width: 40%;
+   margin-right: 5em;
+}
+/* styles the text content in index.html */
+#stuff {
+  width:100%;
+}
+/* clears all content from index.html */
+#everything-else {
+  clear: both;
+}
+/* styles the quote in index.html */
+#bestcake {
+  width: 30%;
+  float: left;
+  text-align: center;
+  padding: 0px 20px 0px 100px;
+  /*display: block;
+  margin-left: 6em;*/
+}
+/* styles the copyright of all pages */
+#copyright {
+  text-align: center;
+}
+/* styles the celebrations button in index.html */
+#celebrationsbutton {
+  background-image: url("../images/celebrations.jpg");
+  height: 150px;
+  width: 275px;
+  color: white;
+  font-size: 300%;
+  font-family: Garamond;
+}
+/* styles the contact button in index.html */
+#contactbutton {
+  background-image: url("../images/contactus.png");
+  height: 150px;
+  width: 286px;
+  color: white;
+  font-size: 300%;
+  font-family: Garamond;
+}
+/* styles the order button in index.html */
+#ordertortebutton {
+  margin-left: auto;
+  background-image: url("../images/ordertorte.jpg");
+  height: 150px;
+  width: 200px;
+  color: white;
+  font-size: 300%;
+  font-family: Garamond;
+}
+/* styles the content in about.html */
+#aboutcontent {
+  width: 100%;
+}
+/* styles the description in about.html */
+#prantlsdescript {
+  float: left;
+  width: 40%;
+  text-align: center;
+  margin-left: 4em;
+}
+/* styles the prantl's picture in about.html */
+#prantlspic {
+  float: right;
+  width: 45%;
+  margin-right: 3em;
+}
+/* styles the buttons div in index.html */
+#buttons {
+  text-align: center;
+}
+/* styles the easter photo in holidays.html */
+#easterphoto {
+  display: block;
+  width: 400px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* styles the description in holidays.html */
+#holidaydescript {
+  text-align: center;
+  width: 33%;
+  float: left;
+}
+/* styles the holidaystuff div in holidays.html */
+#holidaystuff {
+  width: 100%;
+}
+/* styles the thanksgiving div in holidays.html */
+#thanksphoto {
+  float: left;
+  width: 33%;
+}
+/* styles the thanksgiving photo in holidays.html */
+#thanksphoto img {
+  width: 100%;
+}
+/* styles the christmas div in holidays.html */
+#christmasphoto {
+  float: right;
+  width: 33%;
+}
+/* styles the christmas photo in holidays.html */
+#christmasphoto img {
+  width: 100%;
+}
+/* styles the photo in weddings.html */
+#weddingsphoto {
+  display: block;
+  width: 400px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* styles the description in weddings.html */
+#weddingdescript {
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* styles the accordion in weddings.html */
+#accordion {
+  width: 50%;
+  font-family: Garamond;
+  background-color: #EF963D;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* styles the birthday div in celebrations.html */
+#birthday {
+  float: right;
+  width: 33%;
+}
+/* styles the birthday photo in celebrations.html */
+#birthday img {
+  width: 100%;
+}
+/* styles the anniversary div in celebrations.html */
+#anniversary {
+  float: left;
+  width: 33%;
+}
+/* styles the anniversary photo in celebrations.html */
+#anniversary img {
+  width: 100%;
+  height: 40%;
+}
+/* styles the description in celebrations.html */
+#celebrationsdescript {
+  text-align: center;
+  width: 33%;
+  float: left;
+}
+/* styles the celebrationsstuff div in celebrations.html */
+#celebrationsstuff {
+  width: 100%;
+}
+
+/* styles the downtown maps iframe in contact.html */
+#Downtownmap {
+  float: right;
+  margin-right: 8em;
+}
+/* styles the shadyside maps iframe in contact.html */
+#Shadysidemap {
+  margin-left: 8em;
+}
+/* styles the description div in contact.html */
+#locationdescript {
+  display: inline-block;
+  width: 100%;
+}
+/* styles the shadyside description in contact.html */
+#Shadysidedescript {
+  float: left;
+  text-align: center;
+  margin-left: 13em;
+}
+/* styles the downtown description in contact.html */
+#Downtowndescript {
+  float: right;
+  text-align: center;
+  margin-right: 13em;
+}
+/* styles the shadyside graph in contact.html */
+#Shadyside-graph {
+  float: left;
+  width: 40%;
+  margin-left: 2em;
+  margin-bottom: 4em;
+  margin-top: 2em;
+}
+/* styles the downtown graph in contact.html */
+#Downtown-graph {
+  width: 40%;
+  float: right;
+  margin-right: 2em;
+  margin-bottom: 4em;
+  margin-top: 2em;
+}
+/* styles the graphs div in contact.html */
+#graphs {
+  width: 100%;
+}
+/* styles the location images in contact.html */
+#locationimages {
+  width: 100%;
+}
+/* styles the shadyside image in contact.html */
+#shadysideimage {
+  width: 40%;
+  margin-left: 2em;
+  float: left;
+  margin-bottom: 4em;
+}
+/* styles the downtown image in contact.html */
+#downtownimage {
+  width: 40%;
+  margin-right: 2em;
+  float: right;
+  margin-bottom: 4em;
+
+}
+/* styles the forms in contact.html and order.html */
+#formentry {
+  clear: both;
+}
+/* styles the accordion in wedding.html */
+.ui-accordion-header.ui-state-active { background-color: #00a665; }
+
+/* styles the form title */
+#formtitle {
+  text-align: center;
+}
+/* styles the footer in contact.html */
+#contactfooter {
+  font-size: 1.125em;
+}
+/* styles the ordered citation lists at the bottom of certain pages */
+ol {
+  list-style-position: inside;
+}
