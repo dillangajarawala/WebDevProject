@@ -1,11 +1,11 @@
 /* styles the entire page */
-html {
-  font-family: Garamond;
-}
+/* html {
+  font-family: 'Courier New', Courier, monospace;
+} */
 /* styles the body */
 body {
   background-color: #EF963D;
-  font-family: Garamond;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 /* centers the main headings of the pages */
 h2 {
@@ -13,7 +13,7 @@ h2 {
 }
 /* styles the navigation bar */
 #navbar {
-  font-family: Garamond;
+  /* font-family: Garamond; */
   font-size: 1.125em;
 }
 /* styles the individual navigation elements */
@@ -65,7 +65,7 @@ h2 {
 }
 /* styles the link bar of all pages */
 #linkbar {
-  text-align-last: center;
+  text-align: center;
 }
 /* styles the social links of all pages */
 #social {
@@ -321,4 +321,8 @@ h2 {
 /* styles the ordered citation lists at the bottom of certain pages */
 ol {
   list-style-position: inside;
+}
+
+.container-fluid {
+  width: 90%;
 }
